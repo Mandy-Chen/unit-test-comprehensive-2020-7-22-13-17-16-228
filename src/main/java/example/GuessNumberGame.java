@@ -25,6 +25,9 @@ public class GuessNumberGame {
     }
 
     public Boolean valid(String guessNumber) {
+        if(guessNumber.length()!=4){
+            return false;
+        }
         return true;
     }
 }
