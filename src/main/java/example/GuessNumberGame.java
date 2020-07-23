@@ -25,9 +25,24 @@ public class GuessNumberGame {
     }
 
     public Boolean valid(String guessNumber) {
+        Boolean flag=IsRepeatNumber(guessNumber);
         if(guessNumber.length()!=4){
             return false;
+        }else if(flag){
+            return false;
+        }else {
+            return true;
         }
-        return true;
+    }
+
+    private Boolean IsRepeatNumber(String guessNumber) {
+        for (int i = 0; i < guessNumber.length(); i++) {
+            for (int j = i + 1; j < guessNumber.length(); j++) {
+                if(guessNumber.charAt(i)==guessNumber.charAt(j)){
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 }
