@@ -104,5 +104,17 @@ public class GuessNumberGameTest {
         //then
         assertEquals(false, actual);
     }
+    @Test
+    void should_return_true_when_1234_given_123456(){
+        //given
+        AnswerGenerate mockedAnswerGenerate= Mockito.mock(AnswerGenerate.class);
+        given(mockedAnswerGenerate.generate()).willReturn("1234");
+        String guessNumber = "123456";
+        //when
+        GuessNumberGame guessNumberGame = new GuessNumberGame(mockedAnswerGenerate);
+        Boolean actual=guessNumberGame.valid(guessNumber);
+        //then
+        assertEquals(false, actual);
+    }
 
 }
