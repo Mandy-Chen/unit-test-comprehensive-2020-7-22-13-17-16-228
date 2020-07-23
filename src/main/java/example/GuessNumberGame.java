@@ -23,4 +23,8 @@ public class GuessNumberGame {
         }
         return A+"A"+B+"B";
     }
+
+    public Boolean valid(String guessNumber) {
+        return true;
+    }
 }
