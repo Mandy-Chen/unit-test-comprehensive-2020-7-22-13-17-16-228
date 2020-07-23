@@ -16,7 +16,7 @@ public class GuessNumberGame {
             for (int i = 0; i < answer.length(); i++) {
                 if(answer.charAt(i)==guessNumber.charAt(i)){
                     A++;
-                }else if(answer.indexOf(guessNumber.charAt(i))>0) {
+                }else if(answer.indexOf(guessNumber.charAt(i))>-1) {
                     B++;
                 }
             }
