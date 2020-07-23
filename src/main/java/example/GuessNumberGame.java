@@ -1,12 +1,10 @@
 package example;
 
 public class GuessNumberGame {
-//    String answer;
     String answer;
     public GuessNumberGame(AnswerGenerate answerGenerate) {
         this.answer=answerGenerate.generate();
     }
-
 
     public String guess(String guessNumber) {
         int A=0;
