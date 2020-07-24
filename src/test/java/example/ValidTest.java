@@ -26,22 +26,18 @@ public class ValidTest {
         Valid valid = new Valid();
         Boolean actual = valid.valid(validValue);
         //then
-        assertEquals(false,actual);
+        assertEquals(false, actual);
     }
-    //
-//    @Test
-//    void should_return_true_when_1234_given_12() {
-//        //given
-//        AnswerGenerateImp mockedAnswerGenerate = Mockito.mock(AnswerGenerateImp.class);
-//        given(mockedAnswerGenerate.generate()).willReturn("1234");
-//        String guessNumber = "12";
-//        //when
-//        GuessNumberGame guessNumberGame = new GuessNumberGame(mockedAnswerGenerate);
-//        Boolean actual = guessNumberGame.valid(guessNumber);
-//        //then
-//        assertEquals(false, actual);
-//    }
-//
+    @Test
+    void should_return_true_when_1234_given_123456() {
+        //given
+        String validValue = "123456";
+        //when
+        Valid valid = new Valid();
+        Boolean actual = valid.valid(validValue);
+        //then
+        assertEquals(false, actual);
+    }
 //    @Test
 //    void should_return_true_when_1234_given_123456() {
 //        //given
