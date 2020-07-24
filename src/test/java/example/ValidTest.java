@@ -13,11 +13,22 @@ public class ValidTest {
         String validValue = "3462";
         //when
         Valid valid = new Valid();
-        Boolean actual=valid.valid(validValue);
+        Boolean actual = valid.valid(validValue);
         //then
-        assertEquals(true,actual);
+        assertEquals(true, actual);
     }
-//
+
+    @Test
+    void should_return_true_when_1234_given_12() {
+        //given
+        String validValue = "12";
+        //when
+        Valid valid = new Valid();
+        Boolean actual = valid.valid(validValue);
+        //then
+        assertEquals(false,actual);
+    }
+    //
 //    @Test
 //    void should_return_true_when_1234_given_12() {
 //        //given
