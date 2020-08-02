@@ -1,10 +1,6 @@
 package example;
 
-import javax.swing.plaf.synth.SynthOptionPaneUI;
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
-import java.util.Random;
 
 public class AnswerGenerateImp implements AnswerGenerate {
     @Override
