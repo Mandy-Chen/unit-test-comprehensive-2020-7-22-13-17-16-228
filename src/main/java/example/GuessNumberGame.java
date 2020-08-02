@@ -1,7 +1,5 @@
 package example;
 
-import java.util.Scanner;
-
 public class GuessNumberGame {
 
     public GuessNumberGame(AnswerGenerateImp answerGenerate) {
